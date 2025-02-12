@@ -17,6 +17,7 @@ def check_line(ai_sentence, player_sentence):
     result = completion.choices[0].message.content
     return result == "correct"
 
+if __name__ == "__main__":
+    print(check_line("The cat is sleeping silently", "The cat is sleeping without making any sound"))
+    print(check_line("the cat is sleeping peacefully", "the cat is sleeping"))
 
-print(check_line("The cat is sleeping silently", "The cat is sleeping without making any sound"))
-print(check_line("the cat is sleeping peacefully", "the cat is sleeping"))

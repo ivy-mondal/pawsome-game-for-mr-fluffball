@@ -16,5 +16,6 @@ def gib_line(topic):
     result = completion.choices[0].message.content
     return result
 
+if __name__ == "__main__":
+    print(gib_line("cat"))
 
-print(gib_line("cat"))
